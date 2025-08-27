@@ -1,11 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
-<body>
-   
+
+<body class="max-w-[1440px] mx-auto">
+
+    <!-- Navbar -->    
+    <div class="flex justify-between mx-auto px-4 py-2">
+        <div class="flex items-center ">
+            <p class="size-12 mx-2"><img src="./assets/logo.png" alt="" ></p>
+            <p class="text-green-900 font-bold">Emergency <br> Service</p>
+        </div>
+
+        <div class="flex items-center space-x-2">
+         <button class="flex items-center justify-center px-4 py-2 bg-green-50 rounded-full text-gray-800 font-semibold shadow-sm">
+         <p id="heart-counter">0</p>
+         <p class="size-6"><img src="./assets/heart.png" alt=""></p>
+         
+         </button>
+
+         <button class="flex items-center justify-center px-4 py-2 bg-green-50 rounded-full text-gray-800 font-semibold shadow-sm">
+         <p id="coin-counter">100</p>
+         <p class="size-6"><img src="./assets/coin.png" alt=""></p>
+            
+         </button>
+
+         <button class="flex items-center justify-center px-6 py-2 bg-green-500 rounded-full text-white font-semibold shadow-sm hover:bg-green-600 transition-colors">
+         <p>0</p>
+         <p>Copy</p>
+         </button>
+        </div>
+
+    </div>
+
+    <!--Banner-->
+    <div class="bg-green-900 flex flex-col items-center py-2">
+        <p class="size-20"><img src="./assets/logo-dark.png" alt=""></p>
+        <p class="font-bold text-3xl text-white">Emergency Service Directory</p>
+        <p class="text-white">Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh</p>
+    </div>   
+
+    <!--cards and call history-->
+    <div class="w-11/12 grid grid-cols-12 gap-8">
+        <!--cards-->
+        <div class="col-span-9 grid grid-cols-3 gap-2 " >
+
+         <!--card1-->
+            <div class="card bg-base-100 w-72 shadow-sm my-4  mx-0 p-4 ">
+
+                <div class="flex items-center justify-between ">
+                    <p class="bg-red-50 p-3 rounded-xl size-12"><img src="./assets/emergency.png" alt="" class=""></p>
+                    <p   class="heart"><i class="far fa-heart"></i></p>
+                </div>
+                <!-- Text Content -->
+                <div class="mt-4">
+                 <h2 class="font-bold text-2xl text-gray-900 title">National Emergency Number</h2>
+                 <p class="text-sm text-gray-500 mt-1">National Emergency</p>
+                </div>
+                 <!-- Main Number -->
+                <div class="mt-4">
+                 <h1 class="font-bold text-4xl text-gray-900 desc">999</h1>
+                 <!-- Tag -->
+                 <span class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full mt-2">
+                 All
+                 </span>
+                </div>
+
+                <!-- Buttons -->
+                <div class="mt-6 flex space-x-3">
+                 <!-- Copy Button -->
+                 <button class="flex-1 flex items-center justify-center space-x-2 py-3 rounded-xl border border-gray-300 text-gray-700 font-semibold transition hover:bg-gray-100">
+                 <i class="fa-regular fa-copy"></i>
+                 <span>Copy</span>
+                 </button>
+                 <!-- Call Button -->
+                 <button class="flex-1 flex items-center justify-center space-x-2 py-3 rounded-xl bg-green-500 text-white font-semibold transition hover:bg-green-600 call-button">
+                 <i class="fa-solid fa-phone-alt"></i>
+                 <span>Call</span>
+                 </button>
+                </div>
+            </div>
+         <!--card1-->
+            <div class="card bg-base-100 w-72 shadow-sm my-4  mx-0 p-4">
+
+                <div class="flex items-center justify-between ">
+                    <p class="bg-red-50 p-3 rounded-xl size-12"><img src="./assets/emergency.png" alt="" class=""></p>
+                    <p class="heart"><i class="far fa-heart"></i></p>
+                </div>
+                <!-- Text Content -->
+                <div class="mt-4">
+                 <h2 class="font-bold text-2xl text-gray-900">National Emergency Number</h2>
+                 <p class="text-sm text-gray-500 mt-1">National Emergency</p>
+                </div>
+                 <!-- Main Number -->
+                <div class="mt-4">
+                 <h1 class="font-bold text-4xl text-gray-900">999</h1>
+                 <!-- Tag -->
+                 <span class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full mt-2">
+                 All
+                 </span>
+                </div>
+
+                <!-- Buttons -->
+                <div class="mt-6 flex space-x-3">
+                 <!-- Copy Button -->
+                 <button class="flex-1 flex items-center justify-center space-x-2 py-3 rounded-xl border border-gray-300 text-gray-700 font-semibold transition hover:bg-gray-100">
+                 <i class="fa-regular fa-copy"></i>
+                 <span>Copy</span>
+                 </button>
+                 <!-- Call Button -->
+                 <button class="flex-1 flex items-center justify-center space-x-2 py-3 rounded-xl bg-green-500 text-white font-semibold transition hover:bg-green-600 call-button ">
+                 <i class="fa-solid fa-phone-alt"></i>
+                 <span>Call</span>
+                 </button>
+                </div>
+            </div>   
+         <!--card1-->
+            <div class="card bg-base-100 w-72 shadow-sm my-4  mx-0 p-4">
+
+                <div class="flex items-center justify-between ">
+                    <p class="bg-red-50 p-3 rounded-xl size-12"><img src="./assets/emergency.png" alt="" class=""></p>
+                    <p class=""><i class="far fa-heart"></i></p>
+                </div>
+                <!-- Text Content -->
+                <div class="mt-4">
+                 <h2 class="font-bold text-2xl text-gray-900">National Emergency Number</h2>
+                 <p class="text-sm text-gray-500 mt-1">National Emergency</p>
+                </div>
+                 <!-- Main Number -->
+                <div class="mt-4">
+                 <h1 class="font-bold text-4xl text-gray-900">999</h1>
+                 <!-- Tag -->
+                 <span class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full mt-2">
+                 All
+                 </span>
+                </div>
+
+                <!-- Buttons -->
+                <div class="mt-6 flex space-x-3">
+                 <!-- Copy Button -->
+                 <button class="flex-1 flex items-center justify-center space-x-2 py-3 rounded-xl border border-gray-300 text-gray-700 font-semibold transition hover:bg-gray-100">
+                 <i class="fa-regular fa-copy"></i>
+                 <span>Copy</span>
+                 </button>
+                 <!-- Call Button -->
+                 <button class="flex-1 flex items-center justify-center space-x-2 py-3 rounded-xl bg-green-500 text-white font-semibold transition hover:bg-green-600">
+                 <i class="fa-solid fa-phone-alt"></i>
+                 <span>Call</span>
+                 </button>
+                </div>
+            </div>
+         <!--card1-->
+            <div class="card bg-base-100 w-72 shadow-sm my-4  mx-0 p-4">
+
+                <div class="flex items-center justify-between ">
+                    <p class="bg-red-50 p-3 rounded-xl size-12"><img src="./assets/emergency.png" alt="" class=""></p>
+                    <p class=""><i class="far fa-heart"></i></p>
+                </div>
+                <!-- Text Content -->
+                <div class="mt-4">
+                 <h2 class="font-bold text-2xl text-gray-900">National Emergency Number</h2>
+                 <p class="text-sm text-gray-500 mt-1">National Emergency</p>
+                </div>
+                 <!-- Main Number -->
+                <div class="mt-4">
+                 <h1 class="font-bold text-4xl text-gray-900">999</h1>
+                 <!-- Tag -->
+                 <span class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full mt-2">
+                 All
+                 </span>
+                </div>
+
+                <!-- Buttons -->
+                <div class="mt-6 flex space-x-3">
+                 <!-- Copy Button -->
+                 <button class="flex-1 flex items-center justify-center space-x-2 py-3 rounded-xl border border-gray-300 text-gray-700 font-semibold transition hover:bg-gray-100">
+                 <i class="fa-regular fa-copy"></i>
+                 <span>Copy</span>
+                 </button>
+                 <!-- Call Button -->
+                 <button class="flex-1 flex items-center justify-center space-x-2 py-3 rounded-xl bg-green-500 text-white font-semibold transition hover:bg-green-600">
+                 <i class="fa-solid fa-phone-alt"></i>
+                 <span>Call</span>
+                 </button>
+                </div>
+            </div>         
+         <!--card1-->
+            <div class="card bg-base-100 w-72 shadow-sm my-4  mx-0 p-4">
+
+                <div class="flex items-center justify-between ">
+                    <p class="bg-red-50 p-3 rounded-xl size-12"><img src="./assets/emergency.png" alt="" class=""></p>
+                    <p class=""><i class="far fa-heart"></i></p>
+                </div>
+                <!-- Text Content -->
+                <div class="mt-4">
+                 <h2 class="font-bold text-2xl text-gray-900">National Emergency Number</h2>
+                 <p class="text-sm text-gray-500 mt-1">National Emergency</p>
+                </div>
+                 <!-- Main Number -->
+                <div class="mt-4">
+                 <h1 class="font-bold text-4xl text-gray-900">999</h1>
+                 <!-- Tag -->
+                 <span class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full mt-2">
+                 All
+                 </span>
+                </div>
+
+                <!-- Buttons -->
+                <div class="mt-6 flex space-x-3">
+                 <!-- Copy Button -->
+                 <button class="flex-1 flex items-center justify-center space-x-2 py-3 rounded-xl border border-gray-300 text-gray-700 font-semibold transition hover:bg-gray-100">
+                 <i class="fa-regular fa-copy"></i>
+                 <span>Copy</span>
+                 </button>
+                 <!-- Call Button -->
+                 <button class="flex-1 flex items-center justify-center space-x-2 py-3 rounded-xl bg-green-500 text-white font-semibold transition hover:bg-green-600">
+                 <i class="fa-solid fa-phone-alt"></i>
+                 <span>Call</span>
+                 </button>
+                </div>
+            </div>
+         <!--card1-->
+            <div class="card bg-base-100 w-72 shadow-sm my-4  mx-0 p-4">
+
+                <div class="flex items-center justify-between ">
+                    <p class="bg-red-50 p-3 rounded-xl size-12"><img src="./assets/emergency.png" alt="" class=""></p>
+                    <p class=""><i class="far fa-heart"></i></p>
+                </div>
+                <!-- Text Content -->
+                <div class="mt-4">
+                 <h2 class="font-bold text-2xl text-gray-900">National Emergency Number</h2>
+                 <p class="text-sm text-gray-500 mt-1">National Emergency</p>
+                </div>
+                 <!-- Main Number -->
+                <div class="mt-4">
+                 <h1 class="font-bold text-4xl text-gray-900">999</h1>
+                 <!-- Tag -->
+                 <span class="inline-block bg-gray-200 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full mt-2">
+                 All
+                 </span>
+                </div>
+
+                <!-- Buttons -->
+                <div class="mt-6 flex space-x-3">
+                 <!-- Copy Button -->
+                 <button class="flex-1 flex items-center justify-center space-x-2 py-3 rounded-xl border border-gray-300 text-gray-700 font-semibold transition hover:bg-gray-100">
+                 <i class="fa-regular fa-copy"></i>
+                 <span>Copy</span>
+                 </button>
+                 <!-- Call Button -->
+                 <button class="flex-1 flex items-center justify-center space-x-2 py-3 rounded-xl bg-green-500 text-white font-semibold transition hover:bg-green-600">
+                 <i class="fa-solid fa-phone-alt"></i>
+                 <span>Call</span>
+                 </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!--call history-->
+        <div id="history" class="col-span-3   mt-4 ">
+           
+            <div class="flex items-start justify-between">
+                 <div class="flex items-center  py-3 ">
+                 <i class="fa-regular fa-clock "></i>
+                 <p class="font-bold ml-1 ">Call History</p>
+                
+                 </div>
+                <div>
+                 <button class="flex-1 flex items-center justify-center space-x-2 py-3 rounded-2xl bg-green-500 text-white font-semibold transition hover:bg-green-600 h-[50px] w-[100px]">
+                 
+                 <span>Clear</span>
+                 </button>
+                </div>
+            </div>
+
+
+            
+             
+        </div>
+    </div>
+
+
+    <script src="dom.js"></script>
+
 </body>
+
 </html>
