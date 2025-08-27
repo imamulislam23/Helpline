@@ -47,4 +47,29 @@ for (let btn of buttons) {
   });
 }
 
-//call history
+
+
+
+// clear button
+let clearBtn = document.getElementById("clear-button");
+
+clearBtn.addEventListener("click", function () {
+  history.innerHTML = ""; // clears everything inside history
+});
+
+
+//copy counter and clipoard
+let copy=document.querySelectorAll(".copy-button")
+let copyCounter=document.getElementById("copy-counter")
+
+for(let copyBtn of copy){
+  copyBtn.addEventListener("click",function(){
+    let cpy=copyBtn.closest(".card")
+    let cpyitem = cpy.querySelector(".desc").innerText;
+     navigator.clipboard.writeText(cpyitem)
+    alert('Text copied to clipboard: ' + cpyitem);
+    copyCounter.innerText = Number(copyCounter.innerText) + 1;            
+
+  });
+}
+
