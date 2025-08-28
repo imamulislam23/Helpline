@@ -28,17 +28,17 @@ for (let btn of buttons) {
     let name  = card.querySelector(".title").innerText;
     let number = card.querySelector(".desc").innerText;
 
-    coinCounter.innerText = Number(coinCounter.innerText) - 20;
+    
 
     let newCard=document.createElement('div')
 
-    newCard.innerHTML=`<div class="bg-gray-100 shadow-sm w-auto mt-4">
-                          <div>
-                           <p>${name}</p>
+    newCard.innerHTML=`<div class="bg-gray-100 shadow-sm w-auto mt-4 flex items-center justify-between">
+                          <div class="flex flex-col justify-between">
+                           <p class="font-bold">${name}</p>
                            <p>${number}</p>
                           </div>
                           <div>
-                            <p>${time}</p>
+                            <p class="whitespace-nowrap">${time}</p>
                           </div>
                         </div>`  
 
@@ -50,7 +50,8 @@ for (let btn of buttons) {
 
     // show alert message
     else{
-      alert(`You clicked on: ${name}\n${number}`);
+      coinCounter.innerText = Number(coinCounter.innerText) - 20;
+      alert(`📞calling ${name}\n${number}`);
     } 
   });
 }
