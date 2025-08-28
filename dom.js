@@ -13,6 +13,11 @@ for (let heart of hearts) {
 let buttons = document.getElementsByClassName("call-button");
 let coinCounter = document.getElementById("coin-counter");
 let history= document.getElementById("history")
+let now = new Date();
+let time = now.toLocaleTimeString();
+//console.log(time); 
+// Example: "5:22:05 PM"
+
 
 for (let btn of buttons) {
   btn.addEventListener("click", function() {
@@ -31,6 +36,9 @@ for (let btn of buttons) {
                           <div>
                            <p>${name}</p>
                            <p>${number}</p>
+                          </div>
+                          <div>
+                            <p>${time}</p>
                           </div>
                         </div>`  
 
