@@ -51,7 +51,7 @@ for (let btn of buttons) {
     // show alert message
     else{
       coinCounter.innerText = Number(coinCounter.innerText) - 20;
-      alert(`📞calling ${name}\n${number}`);
+      alert(`📞calling ${name} ${number}`);
     } 
   });
 }
